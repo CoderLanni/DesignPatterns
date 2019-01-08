@@ -17,6 +17,9 @@
 		61FB472221E3191100FFBADC /* RYDelegateSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB472121E3191100FFBADC /* RYDelegateSecondViewController.m */; };
 		61FB472521E31C7800FFBADC /* RYDelegateThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB472421E31C7800FFBADC /* RYDelegateThirdViewController.m */; };
 		61FB472821E3345E00FFBADC /* RYTwoDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB472721E3345E00FFBADC /* RYTwoDelegateViewController.m */; };
+		61FB472C21E448A100FFBADC /* RYObserverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB472B21E448A100FFBADC /* RYObserverViewController.m */; };
+		61FB472F21E4495F00FFBADC /* RYObserverNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB472E21E4495F00FFBADC /* RYObserverNotificationViewController.m */; };
+		61FB473321E495C100FFBADC /* RYSingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB473221E495C100FFBADC /* RYSingleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,12 @@
 		61FB472421E31C7800FFBADC /* RYDelegateThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYDelegateThirdViewController.m; sourceTree = "<group>"; };
 		61FB472621E3345E00FFBADC /* RYTwoDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYTwoDelegateViewController.h; sourceTree = "<group>"; };
 		61FB472721E3345E00FFBADC /* RYTwoDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYTwoDelegateViewController.m; sourceTree = "<group>"; };
+		61FB472A21E448A100FFBADC /* RYObserverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYObserverViewController.h; sourceTree = "<group>"; };
+		61FB472B21E448A100FFBADC /* RYObserverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYObserverViewController.m; sourceTree = "<group>"; };
+		61FB472D21E4495F00FFBADC /* RYObserverNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYObserverNotificationViewController.h; sourceTree = "<group>"; };
+		61FB472E21E4495F00FFBADC /* RYObserverNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYObserverNotificationViewController.m; sourceTree = "<group>"; };
+		61FB473121E495C100FFBADC /* RYSingleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYSingleViewController.h; sourceTree = "<group>"; };
+		61FB473221E495C100FFBADC /* RYSingleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYSingleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +80,8 @@
 		61FB46FF21E308DE00FFBADC /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				61FB473021E4959300FFBADC /* SinglePattern(单例) */,
+				61FB472921E4484800FFBADC /* ObserverPattern(观察者) */,
 				61FB471621E3090D00FFBADC /* Delegate(代理) */,
 				61FB470021E308DE00FFBADC /* AppDelegate.h */,
 				61FB470121E308DE00FFBADC /* AppDelegate.m */,
@@ -99,6 +110,26 @@
 				61FB472721E3345E00FFBADC /* RYTwoDelegateViewController.m */,
 			);
 			path = "Delegate(代理)";
+			sourceTree = "<group>";
+		};
+		61FB472921E4484800FFBADC /* ObserverPattern(观察者) */ = {
+			isa = PBXGroup;
+			children = (
+				61FB472A21E448A100FFBADC /* RYObserverViewController.h */,
+				61FB472B21E448A100FFBADC /* RYObserverViewController.m */,
+				61FB472D21E4495F00FFBADC /* RYObserverNotificationViewController.h */,
+				61FB472E21E4495F00FFBADC /* RYObserverNotificationViewController.m */,
+			);
+			path = "ObserverPattern(观察者)";
+			sourceTree = "<group>";
+		};
+		61FB473021E4959300FFBADC /* SinglePattern(单例) */ = {
+			isa = PBXGroup;
+			children = (
+				61FB473121E495C100FFBADC /* RYSingleViewController.h */,
+				61FB473221E495C100FFBADC /* RYSingleViewController.m */,
+			);
+			path = "SinglePattern(单例)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +210,9 @@
 				61FB472221E3191100FFBADC /* RYDelegateSecondViewController.m in Sources */,
 				61FB471921E30AD200FFBADC /* RYDelegateViewController.m in Sources */,
 				61FB470221E308DE00FFBADC /* AppDelegate.m in Sources */,
+				61FB472F21E4495F00FFBADC /* RYObserverNotificationViewController.m in Sources */,
+				61FB472C21E448A100FFBADC /* RYObserverViewController.m in Sources */,
+				61FB473321E495C100FFBADC /* RYSingleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
