@@ -23,6 +23,11 @@
 		61FB473721E4A21100FFBADC /* RYAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB473621E4A21100FFBADC /* RYAdapterViewController.m */; };
 		61FB473A21E4A26400FFBADC /* RYAdaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB473921E4A26400FFBADC /* RYAdaptee.m */; };
 		61FB473E21E4A34200FFBADC /* RYAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB473D21E4A34200FFBADC /* RYAdapter.m */; };
+		61FB474221E5DE8900FFBADC /* RYStrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB474121E5DE8900FFBADC /* RYStrategyViewController.m */; };
+		61FB474521E5DF5900FFBADC /* CustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB474421E5DF5900FFBADC /* CustomField.m */; };
+		61FB474921E5DFC500FFBADC /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB474821E5DFC500FFBADC /* InputValidator.m */; };
+		61FB474C21E5E04700FFBADC /* EmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB474B21E5E04700FFBADC /* EmailValidator.m */; };
+		61FB474F21E5E11000FFBADC /* PhoneNumberValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FB474E21E5E11000FFBADC /* PhoneNumberValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +63,16 @@
 		61FB473B21E4A2DD00FFBADC /* RYTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYTarget.h; sourceTree = "<group>"; };
 		61FB473C21E4A34200FFBADC /* RYAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYAdapter.h; sourceTree = "<group>"; };
 		61FB473D21E4A34200FFBADC /* RYAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYAdapter.m; sourceTree = "<group>"; };
+		61FB474021E5DE8900FFBADC /* RYStrategyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYStrategyViewController.h; sourceTree = "<group>"; };
+		61FB474121E5DE8900FFBADC /* RYStrategyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYStrategyViewController.m; sourceTree = "<group>"; };
+		61FB474321E5DF5900FFBADC /* CustomField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomField.h; sourceTree = "<group>"; };
+		61FB474421E5DF5900FFBADC /* CustomField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomField.m; sourceTree = "<group>"; };
+		61FB474721E5DFC500FFBADC /* InputValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		61FB474821E5DFC500FFBADC /* InputValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		61FB474A21E5E04700FFBADC /* EmailValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailValidator.h; sourceTree = "<group>"; };
+		61FB474B21E5E04700FFBADC /* EmailValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailValidator.m; sourceTree = "<group>"; };
+		61FB474D21E5E11000FFBADC /* PhoneNumberValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumberValidator.h; sourceTree = "<group>"; };
+		61FB474E21E5E11000FFBADC /* PhoneNumberValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +105,7 @@
 		61FB46FF21E308DE00FFBADC /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				61FB473F21E5DE5400FFBADC /* StrategyPattern(策略) */,
 				61FB473421E4A1D600FFBADC /* AdapterPattern(适配器) */,
 				61FB473021E4959300FFBADC /* SinglePattern(单例) */,
 				61FB472921E4484800FFBADC /* ObserverPattern(观察者) */,
@@ -155,6 +171,31 @@
 				61FB473D21E4A34200FFBADC /* RYAdapter.m */,
 			);
 			path = "AdapterPattern(适配器)";
+			sourceTree = "<group>";
+		};
+		61FB473F21E5DE5400FFBADC /* StrategyPattern(策略) */ = {
+			isa = PBXGroup;
+			children = (
+				61FB474621E5DF9C00FFBADC /* InputValidator(输入策略) */,
+				61FB474021E5DE8900FFBADC /* RYStrategyViewController.h */,
+				61FB474121E5DE8900FFBADC /* RYStrategyViewController.m */,
+				61FB474321E5DF5900FFBADC /* CustomField.h */,
+				61FB474421E5DF5900FFBADC /* CustomField.m */,
+			);
+			path = "StrategyPattern(策略)";
+			sourceTree = "<group>";
+		};
+		61FB474621E5DF9C00FFBADC /* InputValidator(输入策略) */ = {
+			isa = PBXGroup;
+			children = (
+				61FB474721E5DFC500FFBADC /* InputValidator.h */,
+				61FB474821E5DFC500FFBADC /* InputValidator.m */,
+				61FB474A21E5E04700FFBADC /* EmailValidator.h */,
+				61FB474B21E5E04700FFBADC /* EmailValidator.m */,
+				61FB474D21E5E11000FFBADC /* PhoneNumberValidator.h */,
+				61FB474E21E5E11000FFBADC /* PhoneNumberValidator.m */,
+			);
+			path = "InputValidator(输入策略)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,17 +270,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				61FB470521E308DE00FFBADC /* ViewController.m in Sources */,
+				61FB474921E5DFC500FFBADC /* InputValidator.m in Sources */,
+				61FB474F21E5E11000FFBADC /* PhoneNumberValidator.m in Sources */,
 				61FB471021E308DF00FFBADC /* main.m in Sources */,
 				61FB472521E31C7800FFBADC /* RYDelegateThirdViewController.m in Sources */,
 				61FB472821E3345E00FFBADC /* RYTwoDelegateViewController.m in Sources */,
 				61FB472221E3191100FFBADC /* RYDelegateSecondViewController.m in Sources */,
+				61FB474521E5DF5900FFBADC /* CustomField.m in Sources */,
 				61FB471921E30AD200FFBADC /* RYDelegateViewController.m in Sources */,
 				61FB473721E4A21100FFBADC /* RYAdapterViewController.m in Sources */,
 				61FB470221E308DE00FFBADC /* AppDelegate.m in Sources */,
+				61FB474C21E5E04700FFBADC /* EmailValidator.m in Sources */,
 				61FB472F21E4495F00FFBADC /* RYObserverNotificationViewController.m in Sources */,
 				61FB473A21E4A26400FFBADC /* RYAdaptee.m in Sources */,
 				61FB472C21E448A100FFBADC /* RYObserverViewController.m in Sources */,
 				61FB473321E495C100FFBADC /* RYSingleViewController.m in Sources */,
+				61FB474221E5DE8900FFBADC /* RYStrategyViewController.m in Sources */,
 				61FB473E21E4A34200FFBADC /* RYAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
