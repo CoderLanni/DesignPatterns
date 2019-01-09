@@ -12,6 +12,7 @@
 //#import "RYTwoDelegateViewController.h"
 #import "RYObserverViewController.h"
 #import "RYSingleViewController.h"
+#import "RYAdapterViewController.h"
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -28,12 +29,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.titleArr = [NSMutableArray arrayWithArray:@[@"代理",@"观察者(通知,KVO)",@"单例"]];
+    self.titleArr = [NSMutableArray arrayWithArray:@[@"代理",@"观察者(通知,KVO)",@"单例",@"适配器"]];
     
     self.tabelview = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStylePlain];
     self.tabelview.delegate = self;
     self.tabelview.dataSource = self;
     [self.view addSubview:self.tabelview];
+    
+    
     
 }
 
@@ -110,6 +113,10 @@
     else if(indexPath.row == 2){
         RYSingleViewController *singleVC = [RYSingleViewController sharedLoginHandle];;
         [singleVC printSingle];
+    }
+    else if(indexPath.row == 3){
+        RYAdapterViewController *adapterVC = [RYAdapterViewController new];
+        [self.navigationController pushViewController:adapterVC animated:YES];
     }
 }
 
